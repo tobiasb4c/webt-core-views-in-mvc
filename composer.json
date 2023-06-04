@@ -1,15 +1,16 @@
 {
-    "name": "fabiniko/webt-core-views-in-mvc",
+    "name": "tobi/mvc",
+    "description": "coole mvc",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "FabiNiko\\WebtCoreViewsInMvc\\": "src/"
+            "Tobi\\Mvc\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Fabian Gesswagner",
-            "email": "Fabian.gesswagner@htl.rennweg.at"
+            "name": "Tobias2085",
+            "email": "9044@htl.rennweg.at"
         }
     ],
     "require": {}

@@ -1,8 +1,8 @@
 <?php
-namespace FabiNiko\WebtCoreViewsInMvc;
+namespace Tobi\Mvc;
 require 'vendor/autoload.php';
 
-use FabiNiko\WebtCoreViewsInMvc\ViewRenderer;
+use Tobi\Mvc\ViewRenderer;
 
 class Hotel
 {

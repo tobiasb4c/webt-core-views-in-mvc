@@ -1,5 +1,5 @@
 <?php
-namespace FabiNiko\WebtCoreViewsInMvc;
+namespace Tobi\Mvc;
 require 'vendor/autoload.php';
 
 class ViewRenderer

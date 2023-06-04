@@ -1,9 +1,10 @@
 <?php
-namespace FabiNiko\WebtCoreViewsInMvc;
+
+namespace Tobi\Mvc;
 require 'vendor/autoload.php';
 
-use FabiNiko\WebtCoreViewsInMvc\ViewRenderer;
-use FabiNiko\WebtCoreViewsInMvc\Hotel;
-use FabiNiko\WebtCoreViewsInMvc\Seeder;
+use Tobi\Mvc\ViewRenderer;
+use Tobi\Mvc\Hotel;
+use Tobi\Mvc\Seeder;
 
 echo ViewRenderer::renderView('./templates/hotels/index.html',  Seeder::generateData());
