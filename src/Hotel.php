@@ -63,6 +63,6 @@ class Hotel
             "###PRICE###" => $this->getPrice(),
         ];
 
-        return ViewRenderer::renderView($this->getTemplatePath(), $data);
+        return ViewRenderer::renderView($this->getTemplatePath(), $data); // Bekommt hotl.html pfad
     }
 }
