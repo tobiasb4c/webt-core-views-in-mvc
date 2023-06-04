@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel Infosite</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 mx-auto mt-3 w-[90%]">
+<h1 class="uppercase text-orange-600 heading-font text-3xl sm:text-4xl text-center">Book one of the most popular hotels</h1>
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full my-3 justify-items-center">
+
+    <figure class="md:h-[200px] w-[60%] md:w-full bg-white flex flex-col md:flex-row shadow">
+        <img src="./hotel.jpg" alt="hotel" class="md:h-full aspect-square">
+        <figcaption class="md:flex flex-row md:flex-col justify-between w-full m-2">
+            <div>
+                <p class="text-orange-600 font-bold"><span class="text-black">Rating</span> {{2.2}}⭐</p>
+                <h2 class="font-light">{{Hotel 1}}</h2>
+            </div>
+            <p class="md:text-right font-bold text-orange-600">from {{65€}}</p>
+        </figcaption>
+    </figure>
+
+    <figure class="md:h-[200px] w-[60%] md:w-full bg-white flex flex-col md:flex-row shadow">
+        <img src="./hotel.jpg" alt="hotel" class="md:h-full aspect-square">
+        <figcaption class="md:flex flex-row md:flex-col justify-between w-full m-2">
+            <div>
+                <p class="text-orange-600 font-bold"><span class="text-black">Rating</span> {{2.2}}⭐</p>
+                <h2 class="font-light">{{Hotel 1}}</h2>
+            </div>
+            <p class="md:text-right font-bold text-orange-600">from {{65€}}</p>
+        </figcaption>
+    </figure>
+
+</section>
+</body>
+</html>

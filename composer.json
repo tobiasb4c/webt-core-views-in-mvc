@@ -1,0 +1,16 @@
+{
+    "name": "fabiniko/webt-core-views-in-mvc",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "FabiNiko\\WebtCoreViewsInMvc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fabian Gesswagner",
+            "email": "Fabian.gesswagner@htl.rennweg.at"
+        }
+    ],
+    "require": {}
+}
