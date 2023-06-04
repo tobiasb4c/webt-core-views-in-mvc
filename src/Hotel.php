@@ -9,19 +9,17 @@ class Hotel
     public string $rating;
     public string $name;
     public string $price;
-    public string $templatePath;
 
     /**
      * @param string $rating
      * @param string $name
      * @param string $price
      */
-    public function __construct(string $rating, string $name, string $price, mixed $templatePath)
+    public function __construct(string $rating, string $name, string $price)
     {
         $this->rating = $rating;
         $this->name = $name;
         $this->price = $price;
-        $this->templatePath = $templatePath;
     }
 
     /**
@@ -54,15 +52,5 @@ class Hotel
     public function getTemplatePath(): string
     {
         return $this->templatePath;
-    }
-
-    public function render(): string   {
-        $data = [
-            "###RATING###" => $this->getRating(),
-            "###NAME###" => $this->getName(),
-            "###PRICE###" => $this->getPrice(),
-        ];
-
-        return ViewRenderer::renderView($this->getTemplatePath(), $data); // Bekommt hotl.html pfad
     }
 }
