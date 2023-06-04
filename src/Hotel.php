@@ -9,21 +9,18 @@ class Hotel
     public string $rating;
     public string $name;
     public string $price;
-    public string $imagePath;
     public string $templatePath;
 
     /**
      * @param string $rating
      * @param string $name
      * @param string $price
-     * @param string $imagePath
      */
-    public function __construct(string $rating, string $name, string $price, mixed $imagePath, mixed $templatePath)
+    public function __construct(string $rating, string $name, string $price, mixed $templatePath)
     {
         $this->rating = $rating;
         $this->name = $name;
         $this->price = $price;
-        $this->imagePath = $imagePath;
         $this->templatePath = $templatePath;
     }
 
@@ -54,14 +51,6 @@ class Hotel
     /**
      * @return string
      */
-    public function getImagePath(): string
-    {
-        return $this->imagePath;
-    }
-
-    /**
-     * @return string
-     */
     public function getTemplatePath(): string
     {
         return $this->templatePath;
@@ -72,7 +61,6 @@ class Hotel
             "###RATING###" => $this->getRating(),
             "###NAME###" => $this->getName(),
             "###PRICE###" => $this->getPrice(),
-            "###IMAGEPATH###" => $this->getImagePath(),
         ];
 
         return ViewRenderer::renderView($this->getTemplatePath(), $data);
